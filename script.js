@@ -99,7 +99,7 @@ function countTime(status) {
 		timeTaken=time2-time1;
 		correctWords=0;
 		for (let i=0; i<givenTxt.split(" ").length;i++) {
-			if (givenTxt.split(" ")[i]===inputTxt.split(" ")[i]) correctWords++;
+			if (givenTxt.split(/\s+/)[i]===inputTxt.split(" ")[i]) correctWords++;
 		}
 		wpm = roundedValue(correctWords / (timeTaken / 60000));
 		console.log(`Words per minute is counted to be ${wpm}`);
