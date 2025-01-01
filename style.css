@@ -1,0 +1,61 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.intro {
+	text-align: center;
+	font-size: 30px;
+	margin: 10px auto;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: ;
+	text-align: justify;
+	font-size: 20px;
+}
+
+#temp {
+	padding: 5px;
+	border-radius: 1px;
+	color: palevioletred;
+	text-align: center;
+}
+
+#horizontalLine {
+	width: 95%;
+	margin: 4px auto;
+	display: flex;
+	justify-content: flex-start;
+}
+
+#horizontalLine .fisrtLine {
+	height: 3px;
+	width: 0%;
+	background-color: mediumseagreen;
+}
+
+#horizontalLine .secondLine {
+	height: 3px;
+	width: 100%;
+	background-color: yellow;
+}
+
+.text-box-div {
+	color: grey;
+	width: 95%;
+	padding: 10px;
+}
+
+.text-box {
+	user-select: none;
+}
+
+.input-box {
+	height: 50px;
+}

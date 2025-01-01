@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<title>Typing Speed Analyzer!</title>
+</head>
+<body>
+	<div class="intro">Test Your Keyboarding Speed!</div>
+	<div id="horizontalLine">
+			<div class="fisrtLine"></div>
+			<div class="secondLine"></div>
+		</div>
+	<div class="container">
+		<div id="temp">Start typing to initiate the test...</div>
+		<div class="text-box-div"><span class="matched"></span><span class="text-box"></span></div>
+		<div class="input-div">
+			<input type="text" name="text" class="input-box" onkeyup="getText()" placeholder="Start typing to initiate your test...">
+		</div>
+	</div>
+
+	<!-- for generating random text from here -->
+	<div style="display: none;">
+		<p id="text1">Nature is a remarkable force that inspires and soothes us. The rustling of leaves, the chirping of birds, and the gentle flow of rivers remind us of life's simplicity. Spending time in nature enhances mental clarity and reduces stress. A walk through a dense forest or along a sandy beach connects us with the earth. Such experiences encourage mindfulness and gratitude. Protecting nature ensures future generations can experience its wonders. From majestic mountains to serene lakes, nature offers a vast canvas of beauty, urging us to explore, respect, and preserve its treasures.</p>
+
+		<p id="text2">Reading is a gateway to knowledge and imagination. Books expose us to different cultures, ideas, and perspectives, broadening our understanding of the world. Regular reading improves vocabulary and strengthens critical thinking skills. Whether it's fiction, non-fiction, or poetry, every genre has its charm. Reading also offers an escape from the stresses of daily life. A gripping novel can transport you to another world, while a self-help book can inspire growth. Encouraging the habit of reading, especially among children, helps nurture creativity and lifelong learning. Truly, books are treasures that enrich our minds and lives.</p>
+
+		<p id="text3">Positive thinking can transform challenges into opportunities. It's a mindset that focuses on solutions rather than problems. People who practice positivity are more resilient and adaptable. Life isn't devoid of difficulties, but maintaining a hopeful outlook helps overcome them effectively. Surrounding oneself with supportive individuals and cultivating gratitude fosters optimism. Positive affirmations, meditation, and journaling are effective tools for nurturing a positive mindset. Though setbacks are inevitable, they can be viewed as lessons. By embracing positivity, we can lead happier and more fulfilling lives, impacting those around us with our energy and enthusiasm.</p>
+
+		<p id="text4">Technology has revolutionized how we live, work, and communicate. From smartphones to artificial intelligence, advancements continue to shape our world. Technology enhances productivity and provides access to endless information. However, over-dependence on technology can lead to issues like reduced face-to-face interactions. Striking a balance between digital and real-life experiences is essential. While it connects people globally, it's vital to use technology responsibly. Ensuring online security and maintaining a healthy screen-time balance promotes well-being. As technology evolves, adapting to its changes while prioritizing human values will help society thrive in a digital age.</p>
+
+		<p id="text5">Time management is crucial for success and personal growth. Planning your day helps in prioritizing tasks and achieving goals efficiently. A to-do list or scheduling app can make managing time easier. Avoid procrastination by breaking tasks into smaller, manageable steps. Identify peak productivity hours and use them wisely. Taking short breaks rejuvenates the mind and prevents burnout. Reflecting on daily activities helps identify areas of improvement. Remember, time is a limited resource, so use it wisely. By mastering time management, one can strike a balance between work, leisure, and personal commitments, leading to a more fulfilling life.</p>
+
+		<p id="text6">Traveling introduces us to diverse cultures, cuisines, and landscapes. It broadens our perspective and enriches our understanding of the world. Exploring new places fosters adaptability and resilience. Whether it's a solo trip or a family vacation, traveling creates cherished memories. Trying local delicacies and engaging with residents provides a glimpse into their way of life. While traveling, it's essential to respect the environment and cultural practices. From bustling cities to serene countryside, every destination has a unique charm. The joy of discovering new horizons reminds us of the beauty and diversity our world offers.</p>
+
+		<p id="text7">Good health is the foundation of a happy life. Regular exercise keeps the body strong and boosts mental well-being. A balanced diet rich in fruits, vegetables, and whole grains provides essential nutrients. Staying hydrated and getting adequate sleep are equally important. Avoiding excessive junk food and sugary drinks helps maintain a healthy weight. Fitness doesn't have to mean intense workouts; even daily walks or yoga can make a difference. Managing stress through meditation or hobbies enhances overall wellness. Remember, taking small but consistent steps towards health today ensures a more energetic and fulfilling tomorrow.</p>
+
+		<p id="text8">Education is a powerful tool for personal and societal development. It opens doors to better opportunities and equips individuals with critical thinking skills. Beyond academics, education fosters moral values and interpersonal skills. Schools and universities provide a platform for learning, but self-education is equally vital. Lifelong learning helps us adapt to the ever-changing world. Encouraging curiosity and creativity among students leads to innovation. Quality education for all is essential to eliminate inequality and poverty. When people are educated, they contribute positively to their communities, driving progress and creating a more harmonious society.</p>
+
+		<p id="text9">Teamwork is the cornerstone of success in any field. When people collaborate, they bring diverse perspectives and skills to the table. Effective communication and mutual respect are crucial for teamwork. Assigning roles based on individual strengths enhances efficiency. Resolving conflicts through dialogue fosters a positive environment. Teams achieve more when they work towards a common goal. Celebrating achievements boosts morale and encourages further collaboration. From sports to corporate projects, teamwork teaches us the value of cooperation and adaptability. It's a reminder that together, we can accomplish things that might seem impossible alone.</p>
+
+		<p id="text10">Preserving the environment is vital for future generations. Human activities like deforestation, pollution, and over-consumption are depleting natural resources. Simple actions, such as recycling, reducing waste, and conserving water, make a big difference. Planting trees and protecting wildlife contribute to biodiversity. Switching to renewable energy sources helps combat climate change. Awareness campaigns encourage people to adopt eco-friendly habits. Governments and industries must also play their part in promoting sustainability. Every individual effort counts, reminding us that protecting the environment is not a choice but a responsibility we all share.</p>
+
+		<p id="text11">Communication is the backbone of human relationships. Whether verbal or non-verbal, it allows us to express our thoughts and emotions. Active listening is as important as speaking clearly. In professional settings, effective communication builds trust and teamwork. Miscommunication, on the other hand, leads to misunderstandings and conflicts. Digital platforms have revolutionized how we connect, but face-to-face conversations remain impactful. Learning to adapt communication styles based on context ensures clarity. Strong communication skills help in resolving issues, fostering relationships, and achieving goals. It is a skill worth mastering for personal and professional growth.</p>
+
+		<p id="text12">Hobbies are a great way to unwind and explore personal interests. Whether it's painting, gardening, or playing a musical instrument, hobbies offer a sense of fulfillment. They provide an escape from daily routines and help reduce stress. Some hobbies, like reading or solving puzzles, stimulate the mind, while others, like hiking or swimming, improve physical fitness. Engaging in a hobby with friends builds stronger connections. Learning new skills through hobbies boosts confidence and creativity. No matter how busy life gets, dedicating time to activities you enjoy enriches your life and brings joy.</p>
+
+		<p id="text13">Hard work is the key to achieving success. It teaches discipline, determination, and perseverance. While talent might give an initial advantage, consistent effort leads to long-term achievements. Hard work involves setting clear goals and staying committed despite challenges. Celebrating small victories along the way keeps motivation high. Successful people often attribute their accomplishments to their dedication and hard work. It's also a reminder that failures are stepping stones to growth. By putting in genuine effort, we not only achieve our objectives but also gain valuable life lessons that shape our character.</p>
+
+		<p id="text14">Social media has transformed the way we communicate and access information. Platforms like Facebook, Instagram, and Twitter connect people worldwide. They offer opportunities for networking, sharing ideas, and staying updated on global events. However, excessive use of social media can lead to issues like addiction and reduced productivity. It's important to use these platforms mindfully, ensuring a healthy balance with offline activities. Social media also plays a significant role in business marketing and raising awareness for social causes. By using it responsibly, we can harness its benefits while minimizing its drawbacks.</p>
+
+		<p id="text15">Life is a journey filled with joys, challenges, and lessons. Every experience shapes us into who we are. Successes bring happiness, while failures teach resilience. It's important to cherish moments with loved ones and focus on personal growth. Setting goals provides direction, but embracing the present brings contentment. Life's uncertainties often lead to unexpected opportunities. Surrounding oneself with positivity and gratitude fosters inner peace. Remember, it's not just about reaching the destination but enjoying the journey. By staying hopeful and embracing change, we can make life meaningful and fulfilling.</p>
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
