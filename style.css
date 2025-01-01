@@ -57,5 +57,9 @@
 }
 
 .input-box {
-	height: 50px;
+	opacity: 0;
+	width: 1px;
+	height: 1px;
+	position: absolute;
+	top: -9999px;
 }
