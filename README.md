@@ -1,0 +1,2 @@
+<h3>Typing Speed Analyser</h3> | <a href="https://sharifulbb10.github.io/typingSpeedAnalyzer.html/">view live</a>
+<p>This is a custom typing speed test analyzer, built with vanilla javascript. Here a user will get a random text of approximately 100 words each time to test his keyboarding speed. The UI is kept minimal. But the creator has a plan to upgrade its feature with more options for typing text and for a catchy interface.</p>
